@@ -1,0 +1,32 @@
+{
+  "name": "map2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.0",
+    "config": "^3.0.1",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

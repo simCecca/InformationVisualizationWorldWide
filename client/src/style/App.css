@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#root{
+  height: 100%;
+}
+
+.map {
+  height: 90%;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.message-form {
+  z-index: 999;
+}
